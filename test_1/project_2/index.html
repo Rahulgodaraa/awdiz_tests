@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+
+  <style>
+    body{
+      background-color:#d0bea6 ;
+
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      padding: 50px 20px;
+      background-color: rgb(225, 149, 122);
+      box-shadow: 1px 1px 10px black;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 200px;
+    }
+
+    li {
+      list-style: none;
+      text-decoration: none;
+      color: aliceblue;
+      cursor: pointer;
+    }
+    li:hover {
+      border-bottom: 2px solid rgba(221, 72, 18, 0.705);
+      transition: all ease 0.2s;
+    }
+
+    .aboutme p {
+      font-size: 60px;
+      margin: 50px 10px;
+      text-align: center;
+      box-shadow: 0px 5px black;
+    }
+    .aboutme span {
+      color: rgba(221, 72, 18, 0.705);
+    }
+    .paragraph {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      word-spacing: 10px;
+    }
+
+    .posts {
+        background-color: rgb(225, 149, 122);
+        padding: 90px 50px ;
+    }
+    .post p{
+        font-size: 60px;
+        margin: 50px 10px;
+        text-align: center;
+        box-shadow: 0px 5px black;
+    }
+
+    #imgs{
+        margin-left: 50px;
+        height: 500px;
+        width: 500px;
+    }
+    .posts p{
+        margin-left: 500px;
+        width: 50%;
+        margin-top: -100px;
+        margin-bottom: 100px;
+
+    }
+    #writer{
+       margin-left: 1500px;
+      
+    }
+    .gallary{
+        width: 100%;
+    }
+    .gallary img{
+         margin-left: 41% ;
+         margin-right: 50%;
+         background: transparent;
+    }
+    .gallary p {
+        font-size: 60px;
+        margin: 50px 10px;
+        text-align: center;
+        box-shadow: 0px 5px black;
+    }
+    .contactme{
+        text-align: center;
+        width: 100%;
+    }
+    #Gender{
+        margin: 20px 10px; 
+    }
+    #submit{
+        margin: 20px 20px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: green;
+        color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <!-- <h1>Web Blog</h1> -->
+      <nav>
+        <ul>
+          <li href="#">Home</li>
+          <li href="#">BLOGS</li>
+          <li href="#">Contact us</li>
+          <li href="#">About us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="aboutme">
+      <p>About <span>ME</span></p>
+      <div class="paragraph">
+        Sure! Here's a 200-word "About Me" section with a random blend of
+        interests, background, and personality traits: --- Hello! I'm Alex, a
+        curious and adventurous individual who loves exploring new horizons. I
+        grew up in a bustling city where the constant energy and diverse culture
+        sparked my interest in different lifestyles and traditions. My passion
+        for technology led me to pursue a degree in computer science, and I've
+        since enjoyed a fulfilling career as a software developer. In my free
+        time, I have a myriad of hobbies that keep me engaged and inspired. I’m
+        an avid reader, always on the lookout for the next great fantasy novel
+        to dive into. Photography is another passion of mine; capturing the
+        beauty of everyday moments brings me immense joy. I also love to travel
+        and have been fortunate enough to visit several countries, each trip
+        adding a new layer of understanding to my worldview. Fitness is a
+        crucial part of my life—I enjoy running and practicing yoga, which help
+        me maintain a balanced and healthy lifestyle. I’m also a bit of a foodie
+        and love experimenting with new recipes in the kitchen. Above all, I
+        value genuine connections and meaningful conversations. I believe in
+        lifelong learning and am constantly seeking opportunities to grow and
+        contribute positively to the world around me. --- Feel free to customize
+        this to better fit your own experiences and personality!
+
+     
+      </div>
+    </section>
+
+    <div class="post">
+      <p>Blog Posts</p>
+    </div>
+    <div class="posts">
+        <span id="imgs"><img src="./img/1.jpeg" alt="" /></span>
+        <span id="ps"
+          ><p>
+            Certainly! Here's a 50-word description for an image of a mountain
+            and jungle: A breathtaking panorama where towering mountains meet
+            lush, verdant jungle. The rugged peaks, draped in mist, rise
+            majestically above the dense foliage. Vivid green treetops blend
+            seamlessly with the rocky terrain, creating a stunning contrast that
+            highlights the raw, untouched beauty of nature's diverse landscapes.
+            <div id="writer"> - Bloger</div>
+
+          </p></span
+        >
+        <span id="imgs"><img  src="./img/3.jpeg" alt=""></span>
+        <span id="ps"><p>Sure! Here's a 50-word description for an image of a jungle with water:            
+            A serene jungle scene where a crystal-clear stream winds through dense, emerald foliage. The water glistens under dappled sunlight, reflecting the lush greenery. Vibrant plants and towering trees surround the tranquil flow, creating a picturesque haven of natural beauty and peace in the heart of the jungle.
+           <div id="writer"> - Bloger</div>
+</p></span>
+      </div>
+
+      <div class="gallary">
+        <p>Gallery</p>
+        <img height="600px" src="./img/galary.jpg" alt="">
+      </div>
+
+      <div class="contactme">
+        <section class="form">
+            <form action="">
+                <fieldset>
+                    <legend >Contact me:</legend>
+                    <label for="top"> Topic: <br>
+                        <textarea name="top" id="top" rows="1"></textarea><br>
+                    <label for="msg">  Message: <br>
+                        <textarea name="msg" id="msg" rows="5" ></textarea>
+                    </label><br>
+              
+                    </label><label for="Number"> Phone Number: <br>
+                        <input type="Phone" id="NUmber"  name="Number">
+                    </label><br>
+                    <label id="Gender" for="Gender"> Gender:
+                       <select name="Gender" id="Gender"> 
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Custom">Custom</option>
+                       </select>
+                    </label><br>
+
+                    <input onclick="alert('Form Recived, will Contact You shortly ')" id="submit" type="submit">
+                </fieldset>
+            </form>
+          </section>
+      </div>
+  </body>
+</html>
